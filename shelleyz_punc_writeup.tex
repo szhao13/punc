@@ -1,0 +1,38 @@
+\documentclass[11pt]{article}
+% decent example of doing mathematics and proofs in LaTeX.
+% An Incredible degree of information can be found at
+% http://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+% Use wide margins, but not quite so wide as fullpage.sty
+\marginparwidth 0.5in 
+\oddsidemargin 0.25in 
+\evensidemargin 0.25in 
+\marginparsep 0.25in
+\topmargin 0.25in 
+\textwidth 6in \textheight 8 in
+% That's about enough definitions
+
+\usepackage{amsmath}
+\usepackage{upgreek}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+
+\begin{document}
+\author{Shelley Zhao}
+\title{Lab 06 - PUnC}
+\date{\vspace{-5ex}}
+\maketitle
+
+\begin{enumerate}
+	\item My test cases for the overall Simon module simulate a game of Simon with several rounds to make sure that all behaviors are as expected, and to make sure that the game moves to the correct state from a previous state based off the control signals it receives using assert functions to check the state. I ensure that the gameplay continues when guesses are correct, and finishes when a guess.
+	\item I had some issues with my index registers giving me bugs based off of which always blocks I modified them in, and bits in my state register going unused.
+	\item This lab took me an insanely long amount of time (I estimate around 35 hours?)  and a LOT of stress. I had trouble understanding how to write a datapath since I didn't understand well how clock edges worked to read and write memory or what the key diffences were between the datapath and the controller. A lot of my logic was written in the datapath when it should have been in the controller, and it took me a long time to figure out how it should have been divided - this was maybe the most time consuming part of the assignment. The other issue was that help was difficult to get - almost every time I went to lab hours, it was packed and there were multiple times where I wasn't able to get help for the entire two hour session. The TAs were super nice though and Ting in particular helped me a lot, for which I'm grateful. I don't think it's so much an issue with the course but the fact that it's understaffed and difficult to get assistance. It would have been helpful as well to see some examples of how to use edge-triggered memory, and datapaths vs controllers so that I would have understood how to structure my code. I do feel like I have a much better understanding of how these processors work though, so overall it was a good learning experience, just incredibly time consuming. 
+	
+\end{enumerate}
+	
+
+
+
+
+\end{document}
